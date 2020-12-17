@@ -12,60 +12,92 @@ Clone repo located at <repo> onto local machine. Original repo can be located on
 git cone <repo>
 ```
 
-
+Define author name to be used for all commits in current repo. Devs commonly use --global flag to set config options for current user.
 ```python
 git config user.name <name>
 ```
-  Define author name to be used for all commits in current repo. Devs commonly use --global flag to set config options for current user.
   
+
+Stage all changes in <directory> for the next commit. Replace <directory> with a <file> to change a specific file.
 ```python
 git add <directory>
 ```
-  Stage all changes in <directory> for the next commit. Replace <directory> with a <file> to change a specific file.
-  
+
+Commit the staged snapshot, but instead of launching a text editor, use <message> as the commit message.
 ```python
 git commit -m "<message>"
-```
-  Commit the staged snapshot, but instead of launching a text editor, use <message> as the commit message.
-  
+```  
+
+List which files are staged, unstaged, and untracked.
 ```python
 git status
 ```
-  List which files are staged, unstaged, and untracked.
   
+Displays the entire commit history using the default format. For customization see additional options.
 ```python
 git log
-```
-  Displays the entire commit history using the default format. For customization see additional options.
-  
+```  
+
+Show unstaged changes between your index and working directory.
 ```python
 git diff
 ```
-  Show unstaged changes between your index and working directory.
-
 
 ## Undoing Changes 
 
+
+Create new commit that undoes all of the changes made in <commit>, then apply it ti the current branch.
 ```python
 git revert <commit>
-```
-  Create new commit that undoes all of the changes made in <commit>, then apply it ti the current branch.
-  
+```  
+
+Remove <file> from the staging area, but leave the working directory unchanged. This unchanges a file without overwriting any changes.
 ```python
 git reset <file>
 ```
-  Remove <file> from the staging area, but leave the working directory unchanged. This unchanges a file without overwriting any changes.
   
+Shows which files would be removed from working directory. Use the -f flag in place of the -n flag to execute the clean.
 ```python
 git clean -n
 ```
-  Shows which files would be removed from working directory. Use the -f flag in place of the -n flag to execute the clean.
-
 
 ## Rewriting Git history
 
+Replace the last commit with the staged changes and last commit combined. Use with nothing staged to edit the last commit's message.
 ```python
 git commit --amend
 ```
-  Replace the last commit with the staged changes and last commit combined. Use with nothing staged to edit the last commit's message.
+
+Rebase the current branch onto <base>. <base> can be a commit ID, a branch name, a tag, or a relative reference to HEAD.
+```python
+git rebase <base>
+```
+
+Show a log of changes to the local repository's HEAD. Add --relative-date flag to show date onfo or --all to show all refs.
+```python
+git reflog
+```
+
+## Git Branches 
+
+List all of the branches in your repo. Add a <branch> argument to create a new branch with the name <branch>.
+```python
+git branch
+```
+Create and check out a new branch named <branch>. Drop the -b flag to checkout an existing branch.
+```python
+git checkout -b <branch>
+```
+  
+Merge <branch> into the current branch.
+```python
+git merge <branch>
+```
+## Remote Repositories
+
+
+  
+
+
+
 
