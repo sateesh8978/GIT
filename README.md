@@ -95,6 +95,27 @@ git merge <branch>
 ```
 ## Remote Repositories
 
+Create a new connection to a remote repo. After adding a remote, you can use <name> as a shortcut for <url> in other commands.
+```python
+git remote add <name> <url>
+```
+
+Fetches a specific <branch>, from the repo. Leave off <branch> to fetch all remote refs.
+```python
+  git fetch <remote> <branch>
+```
+
+Fetch the specified remote’s copy of current branch and immediately merge it into the local copy.
+```python
+git pull <remote>
+```
+
+Push the branch to <remote>, along with necessary commits and objects. Creates named branch in the remote repo if it doesn’t exist.
+```python
+  git push <remote> <branch>
+```
+  
+
 
   
 
