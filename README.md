@@ -1,7 +1,5 @@
 # GIT
-GIT 
-
-##GIT Basics
+## GIT Basics
 
 git init <directory> 
   Create empty Git repo in specified directory. Run with no arguments to initialize the current directory as a git repository.
@@ -28,7 +26,7 @@ git diff
   Show unstaged changes between your index and working directory.
 
 
-##Undoing Changes 
+## Undoing Changes 
 
 git revert <commit> 
   Create new commit that undoes all of the changes made in <commit>, then apply it ti the current branch.
@@ -40,7 +38,7 @@ git clean -n
   Shows which files would be removed from working directory. Use the -f flag in place of the -n flag to execute the clean.
 
 
-##Rewriting Git history
+## Rewriting Git history
 
 git commit --amend
   Replace the last commit with the staged changes and last commit combined. Use with nothing staged to edit the last commit's message.
