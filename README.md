@@ -1,18 +1,18 @@
 # GIT
 ## GIT Basics
 
+
+Create empty Git repo in specified directory. Run with no arguments to initialize the current directory as a git repository.
 ```python
 git init <directory>
 ```
-
-  Create empty Git repo in specified directory. Run with no arguments to initialize the current directory as a git repository.
   
+Clone repo located at <repo> onto local machine. Original repo can be located on the local filesystem or on a remote machine via HTTP or SSH.
 ```python
 git cone <repo>
 ```
 
-  Clone repo located at <repo> onto local machine. Original repo can be located on the local filesystem or on a remote machine via HTTP or SSH.
-  
+
 ```python
 git config user.name <name>
 ```
